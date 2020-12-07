@@ -1,0 +1,27 @@
+Readme like text file 
+
+2.40pm
+Creating a boiler plate code:
+
+npx create-react-app my-app
+cd my-app
+npm start
+
+Revamp Hacker News website with ReactJs and a design framework (Ant Design preferably) for it to look like a modern SPA. Following items shall be expected to be covered in this assignment.
+Implement the Home, Welcome, New, Jobs, Submit and profile tabs. 
+Screenshot 2020-10-12 132133 (1).jpg
+Implement the login and logout mechanisms.
+Submitting a post can be done only when the user is logged in.
+Other tabs can be viewed without logging in.
+For APIs you can refer to the network of this website or refer to this API documentation.
+The webpage shall be responsive.
+Send us the github repository and deploy it to Netlify and share us the url.
+
+
+
+
+
+
+
+
+
