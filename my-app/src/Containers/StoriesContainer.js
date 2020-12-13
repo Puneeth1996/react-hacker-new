@@ -3,17 +3,22 @@ import { getStoryIds } from '../Services/hnApi';
 
 import { Story } from '../Components/Story';
 
+import { useInfiniteScroll } from './useInfiniteScroll';
+
 export const StoriesContainer =  () => {
-    const [storyIds, setStoryIds] = useState( [] );
+    const { count } = useInfiniteScroll();
+    const [storyIds, setStoryIds] = useState([]);
 
-    useEffect( () => {
-        getStoryIds().then( data => setStoryIds(data) );
-    }, [] );
-
+    useEffect(() => {
+        console.log('count', count)
+        getStoryIds().then(data => setStoryIds(data));
+    }, [count]);
 
     return <>
         <h1>Hacker new stories</h1>
-        {storyIds.map(storyId => <Story key={storyId} storyId={storyId} />)}
+        {storyIds.slice(0, count).map(storyId => (
+            <Story key={storyId} storyId={storyId} />
+        ))}
     </>;
 }
 
