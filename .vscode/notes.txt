@@ -27,7 +27,11 @@ Revamp Hacker News( https://news.ycombinator.com/ ) website with ReactJs and a d
 
 
 
+13th Dec 2020 
+11.30am 
 
+
+Will be making the necessary request to api and will be getting the data = Welcome, new, threads, past, comments, ask, show, jobs, Submit
 
 
 
