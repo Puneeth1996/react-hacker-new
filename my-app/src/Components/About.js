@@ -1,11 +1,12 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 
+import { StoriesContainer } from '../Containers/StoriesContainer';
 
 function About() {
   return (
     <div>
-      About
+      <StoriesContainer />
     </div>
   );
 }
