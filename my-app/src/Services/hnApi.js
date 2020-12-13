@@ -6,9 +6,12 @@ export const newStoriesUrl = `${baseUrl}newstories.json`;
 export const storyUrl = `${baseUrl}item/`;
 
 
+import { selectFields } from '../utils/selectFields';
+
+
 export const getStory = async (storyId) => {
     const result = await axios.get(`${storyUrl + storyId}.json`)
-                                .then( ({ data }) => data);
+                                .then( ({ data }) => data && selectFields(data) );
     return result;
 }
 

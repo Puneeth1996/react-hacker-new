@@ -11,6 +11,9 @@ export const StoriesContainer =  () => {
     }, [] );
 
 
-    return storyIds.map(storyId => <Story storyId={storyId} />);
+    return <>
+        <h1>Hacker new stories</h1>
+        {storyIds.map(storyId => <Story key={storyId} storyId={storyId} />)}
+    </>;
 }
 
