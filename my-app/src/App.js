@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 
-import Nav from './Nav';
-import About from './About';
-import Welcome from './Welcome';
+import Nav from './Containers/Nav';
+import About from './Components/About';
+import Welcome from './Components/Welcome';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
