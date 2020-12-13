@@ -34,9 +34,11 @@ export const StoryTitle = styled.h1`
 
 export const StoryMeta = styled.div`
     font-style: italic;
-
+    > span:first-child { 
+        margin-right: 24x;
+    }
     > span:not(:first-child):before { 
-        content: '•';
+        content: '  •';
         margin: 0 7px;
     }
     .story__meta-bold {
