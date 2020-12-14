@@ -12,6 +12,7 @@ function Nav() {
       <ul className='nav-links'>
         <Link style={newStyle} to='/about'><li>About</li></Link>
         <Link style={newStyle} to='/'><li>Welcome</li></Link>
+        <Link style={newStyle} to='/login'><li>Login</li></Link>
       </ul> 
     </nav>
   );
